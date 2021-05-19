@@ -1,5 +1,7 @@
 # BigSur Gigabyte Z390 Aorus Master (OpenCore)
 
+I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ ) 
+
 ## My PC Build
 
 * **CPU:** Intel Core i9-9900K
