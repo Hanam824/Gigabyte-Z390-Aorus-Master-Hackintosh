@@ -1,4 +1,4 @@
-# Hackintosh
+# BigSur Gigabyte Z390 Aorus Master (OpenCore)
 
 ## My PC Build
 
