@@ -17,8 +17,8 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 
 # Resources
 
-[Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-[Wifi-Bluetooth](https://github.com/OpenIntelWireless)
+* [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+* [Wifi-Bluetooth](https://github.com/OpenIntelWireless)
 
 # Tools
 * [Hackintool](https://github.com/headkaze/Hackintool)
