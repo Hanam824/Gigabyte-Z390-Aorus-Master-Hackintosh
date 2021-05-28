@@ -18,4 +18,15 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 # Resources
 
 [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+[Wifi-Bluetooth](https://github.com/OpenIntelWireless)
 
+# Tools
+[Hackintool](https://github.com/headkaze/Hackintool)
+[OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
+[OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
+
+
+# Thanks
+[cmer](https://github.com/cmer) : this is the first guide that I followed and try with Catalina 10.15.1
+[AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make something well.
+[Colin Sullender](https://github.com/shiruken) : Previous, I try many times but cannot boot into Macintosh. Thanks for using Intel CNVI in your system. I just rebuild USB Map kext and everything works.
