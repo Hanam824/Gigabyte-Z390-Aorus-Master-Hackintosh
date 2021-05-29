@@ -14,6 +14,20 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 * **Power Supply:** Corsair RMX Series 80PLUS Gold 1000W
 * **Case:** Cooler Master MasterCase H500M ARGB
 * **Monitor:** Dell Display Monitor SE2416H 23.8inches
+# Working
+* Ethernet
+* Onboard Audio
+* iMessage
+* Sleep/Wake
+* Bluetooth & Wi-Fi
+
+# Not Working
+* Airdrop
+* Handoff
+
+# Wifi and Bluetooth
+* I use LAN for network and use bluetooth for JBL FLIP 5 Speaker.
+* I just made a comparison between Windows and Mac in [here](image)
 
 # Resources
 
