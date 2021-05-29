@@ -32,12 +32,13 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 # Resources
 
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-* [Wifi-Bluetooth](https://github.com/OpenIntelWireless)
+* [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
 
 # Tools
 * [Hackintool](https://github.com/headkaze/Hackintool)
 * [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
+* [Wifi-Bluetooth kext](https://github.com/OpenIntelWireless)
 
 
 # Thanks
