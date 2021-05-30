@@ -2,32 +2,47 @@
 
 I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ ) 
 
-<details>
 ## My PC Build
-
-* **CPU:** Intel Core i9-9900K
-* **GPU:** MSI Radeon RX 5700 XT EVOKE OC Graphics Board
-* **Motherboard:** Gigabyte Z390 AORUS MASTER
-* **Storage (macOS):** Samsung T7 500GB SSD (`USB3.1` Front Panel)
-* **Storage (Windows):** Crucial P1 500GB 3D NAND NVMe PCIe (`M2M` slot)
-* **Memory:** Corsair Vengeance LPX 32GB (2x16GB) 3200MHz DDR4
-* **CPU Cooler:** EKWB EK-KIT Performance Series PC Watercooling Kit P360
-* **Power Supply:** Corsair RMX Series 80PLUS Gold 1000W
-* **Case:** Cooler Master MasterCase H500M ARGB
-* **Monitor:** Dell Display Monitor SE2416H 23.8inches
+<details>
+  <summary><strong>Hardware</strong></summary>
+  
+  | Category          | Component                                                | Note                                                  |
+  | ----------------- | -------------------------------------------------------  | ----------------------------------------------------- |
+  | CPU               | Intel Core i9-9900K                                      |                                                       |
+  | GPU               | MSI Radeon RX 5700 XT EVOKE OC Graphics Board            | Native support                                        |
+  | Motherboard       | Gigabyte Z390 AORUS MASTER                               |                                                       |
+  | Storage (macOS)   | Samsung T7 500GB SSD (`USB3.1` Front Panel)              | External. Use USB Type-C Front Panel                  |
+  | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2M` slot)          |                                                       |
+  | Memory            | Corsair Vengeance LPX 32GB (2x16GB) 3200MHz DDR4         |                                                       |
+  | CPU Cooler        | EKWB EK-KIT Performance Series PC Watercooling Kit P360  |                                                       |
+  | Power Supply      | Corsair RMX Series 80PLUS Gold 1000W                     |                                                       |
+  | Case              | Cooler Master MasterCase H500M ARGB                      |                                                       |
+  | Monitor           | Dell Display Monitor SE2416H 23.8inches                  |                                                       |
+  | Wifi & BT         | Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)   | But I use LAN for network                             |
+  |                   | Include **Intel Wireless-AC 9560** module inside         | I use bluetooth for JBL FLIP 5 Speaker.               |
+  |                   |                                                          | Use Itlwm and HeliPort for increase wifi speed        |
+  |                   |                                                          | Use AirportItlwm will native Wi-Fi control but slow   |
   
 </details>
 
-# Working
-* Ethernet
-* Onboard Audio
-* iMessage
-* Sleep/Wake
-* Bluetooth & Wi-Fi
+<details>
+  <summary><strong>Working ✅</strong></summary>
+  
+  * ✅ Ethernet
+  * ✅ Onboard Audio
+  * ✅ iMessage
+  * ✅ Sleep/Wake
+  * ✅ Bluetooth & Wi-Fi  
+  
+</details>
 
-# Not Working
-* Airdrop
-* Handoff
+<details>
+  <summary><strong>Not Working ⚠️</strong></summary>
+  
+  * ⚠️ Airdrop
+  * ⚠️ Handoff
+  
+</details>
 
 # Wifi and Bluetooth
 * I use LAN for network and use bluetooth for JBL FLIP 5 Speaker.
