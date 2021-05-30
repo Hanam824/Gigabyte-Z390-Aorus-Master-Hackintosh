@@ -29,6 +29,29 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 </details>
 
 <details>
+
+<summary><strong>Kernel extensions</strong></summary>
+<br>
+
+| Kext                   | Version        |
+|:---------------------- | -------------- |
+| Lilu                   | 1.5.3          |
+| VirtualSMC             | 1.2.3          |
+| WhateverGreen          | 1.4.9          |
+| AppleALC               | 1.6.0          |
+| IntelBluetoothFirmware | 1.1.2          |
+| IntelBluetoothInjector | 1.1.2          |
+| IntelMausi             | 1.0.6          |
+| SMCProcessor           | 1.2.3          |
+| SMCSuperIO             | 1.2.3          |
+| USBMap                 | 0.0.0          |
+| itlwm                  | 1.3.0          |
+
+
+
+</details>
+
+<details>
   <summary><strong>Working ✅</strong></summary>
   
   * ✅ Ethernet
