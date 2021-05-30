@@ -1,6 +1,9 @@
 # BigSur Gigabyte Z390 Aorus Master (OpenCore)
 
-I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ ) 
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Unstable](https://img.shields.io/badge/macOS-11.3.1-brightgreen.svg)](https://www.apple.com/macos/big-sur)
+
+I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ )
 
 ## My PC Build
 <details>
