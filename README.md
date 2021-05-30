@@ -2,6 +2,7 @@
 
 I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ ) 
 
+<details>
 ## My PC Build
 
 * **CPU:** Intel Core i9-9900K
@@ -14,6 +15,9 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 * **Power Supply:** Corsair RMX Series 80PLUS Gold 1000W
 * **Case:** Cooler Master MasterCase H500M ARGB
 * **Monitor:** Dell Display Monitor SE2416H 23.8inches
+  
+</details>
+
 # Working
 * Ethernet
 * Onboard Audio
