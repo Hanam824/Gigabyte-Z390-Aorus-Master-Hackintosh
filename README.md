@@ -63,10 +63,10 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 </details>
 
 <details>
-  <summary><strong>Not Working ⚠️</strong></summary>
+  <summary><strong>Not Working ☑️</strong></summary>
   
-  * ⚠️ Airdrop
-  * ⚠️ Handoff
+  * ☑️ Airdrop
+  * ☑️ Handoff
   
 </details>
 
