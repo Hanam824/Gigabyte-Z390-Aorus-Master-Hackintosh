@@ -21,10 +21,11 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
   | Power Supply      | Corsair RMX Series 80PLUS Gold 1000W                     |                                                       |
   | Case              | Cooler Master MasterCase H500M ARGB                      |                                                       |
   | Monitor           | Dell Display Monitor SE2416H 23.8inches                  |                                                       |
-  | Wifi & BT         | Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)   | But I use LAN for network                             |
-  |                   | Include **Intel Wireless-AC 9560** module inside         | I use bluetooth for JBL FLIP 5 Speaker.               |
+  | LAN               | Intel® i219v GbE LAN                                     | I use LAN for network                                 |
+  | Wifi & BT         | Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)   | I just use bluetooth for JBL FLIP 5 Speaker.          |
+  |                   | Include **Intel Wireless-AC 9560** module inside         | If you want native wifi control.                      |
+  |                   |                                                          | Use AirportItlwm instead but slow [speed](image)      |
   |                   |                                                          | Use Itlwm and HeliPort for increase wifi speed        |
-  |                   |                                                          | Use AirportItlwm will native Wi-Fi control but slow   |
   
 </details>
 
@@ -44,7 +45,7 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 | IntelMausi             | 1.0.6          |
 | SMCProcessor           | 1.2.3          |
 | SMCSuperIO             | 1.2.3          |
-| USBMap                 | 0.0.0          |
+| USBMap                 | Manual         |
 | itlwm                  | 1.3.0          |
 
 
@@ -52,27 +53,17 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 </details>
 
 <details>
-  <summary><strong>Working ✅</strong></summary>
+  <summary><strong>Working ✅ / Not Working ☑️</strong></summary>
   
   * ✅ Ethernet
   * ✅ Onboard Audio
   * ✅ iMessage
   * ✅ Sleep/Wake
-  * ✅ Bluetooth & Wi-Fi  
-  
-</details>
-
-<details>
-  <summary><strong>Not Working ☑️</strong></summary>
-  
+  * ✅ Bluetooth & Wi-Fi
   * ☑️ Airdrop
   * ☑️ Handoff
   
 </details>
-
-# Wifi and Bluetooth
-* I use LAN for network and use bluetooth for JBL FLIP 5 Speaker.
-* I just made a comparison between Windows and Mac in [here](image)
 
 # Resources
 
