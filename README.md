@@ -1,6 +1,6 @@
 # BigSur Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Unstable](https://img.shields.io/badge/macOS-11.4.0-brightgreen.svg)](https://www.apple.com/macos/big-sur)
 
 I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ )
@@ -37,9 +37,9 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 | Kext                   | Version        |
 |:---------------------- | -------------- |
 | Lilu                   | 1.5.3          |
-| VirtualSMC             | 1.2.3          |
-| WhateverGreen          | 1.4.9          |
-| AppleALC               | 1.6.0          |
+| VirtualSMC             | 1.2.4          |
+| WhateverGreen          | 1.5.0          |
+| AppleALC               | 1.6.1          |
 | IntelBluetoothFirmware | 1.1.2          |
 | IntelBluetoothInjector | 1.1.2          |
 | IntelMausi             | 1.0.6          |
