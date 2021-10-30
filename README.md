@@ -41,12 +41,12 @@ I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogod
 | WhateverGreen          | 1.5.4          |
 | AppleALC               | 1.6.5          |
 | IntelBluetoothFirmware | 2.0.1          |
-| IntelBluetoothInjector | 2.0.1          |
 | IntelMausi             | 1.0.7          |
 | SMCProcessor           | 1.2.7          |
 | SMCSuperIO             | 1.2.7          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.0.0          |
+| BlueToolFixup          | 2.6.1 beta     |
 
 
 
