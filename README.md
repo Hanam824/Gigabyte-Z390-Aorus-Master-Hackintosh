@@ -3,7 +3,7 @@
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-12.0.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
 
-I follow by [this guide](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/ )
+![Monterey 12](https://user-images.githubusercontent.com/58266242/139516031-6854bd16-d4c7-4942-b907-f225ef689c97.png)
 
 ## My PC Build
 <details>
