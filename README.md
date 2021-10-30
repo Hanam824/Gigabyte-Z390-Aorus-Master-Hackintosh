@@ -69,6 +69,7 @@
 
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 * [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
+* [Dortania build-repo](https://github.com/dortania/build-repo/releases)
 
 # Tools
 * [Hackintool](https://github.com/headkaze/Hackintool)
