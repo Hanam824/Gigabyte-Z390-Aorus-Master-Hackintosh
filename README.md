@@ -1,9 +1,9 @@
 # Monterey Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-12.0.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-12.4-brightgreen.svg)](https://www.apple.com/macos/monterey)
 
-![Monterey 12](https://user-images.githubusercontent.com/58266242/139516031-6854bd16-d4c7-4942-b907-f225ef689c97.png)
+![Monterey 12](https://user-images.githubusercontent.com/58266242/175797574-659186e0-6856-45d4-b33f-1cda98078dac.png)
 
 ## My PC Build
 <details>
@@ -36,17 +36,17 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.5.9          |
+| Lilu                   | 1.6.0          |
 | VirtualSMC             | 1.2.8          |
-| WhateverGreen          | 1.5.6          |
-| AppleALC               | 1.6.8          |
+| WhateverGreen          | 1.5.9          |
+| AppleALC               | 1.7.2          |
 | IntelBluetoothFirmware | 2.1.0          |
 | IntelMausi             | 1.0.7          |
-| SMCProcessor           | 1.2.8          |
-| SMCSuperIO             | 1.2.8          |
+| SMCProcessor           | 1.2.9          |
+| SMCSuperIO             | 1.2.9          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
-| BlueToolFixup          | 2.6.1          |
+| BlueToolFixup          | 2.6.2          |
 
 
 
@@ -80,5 +80,6 @@
 
 # Thanks
 * [cmer](https://github.com/cmer) : this is the first guide that I followed and try with Catalina 10.15.1
-* [AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make something well.
+* [AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make somethi![Uploading Untitled-1.png…]()
+ng well.
 * [Colin Sullender](https://github.com/shiruken) : Previous, I try many times but cannot boot into Macintosh. Thanks for using Intel CNVI in your system. I just rebuild USB Map kext and everything works.
