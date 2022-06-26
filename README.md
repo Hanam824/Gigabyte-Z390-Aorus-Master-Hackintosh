@@ -37,7 +37,7 @@
 | Kext                   | Version        |
 |:---------------------- | -------------- |
 | Lilu                   | 1.6.0          |
-| VirtualSMC             | 1.2.8          |
+| VirtualSMC             | 1.2.9          |
 | WhateverGreen          | 1.5.9          |
 | AppleALC               | 1.7.2          |
 | IntelBluetoothFirmware | 2.1.0          |
