@@ -1,6 +1,6 @@
 # Monterey Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-12.4-brightgreen.svg)](https://www.apple.com/macos/monterey)
 
 ![Monterey 12](https://user-images.githubusercontent.com/58266242/175797574-659186e0-6856-45d4-b33f-1cda98078dac.png)
@@ -36,17 +36,17 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.0          |
-| VirtualSMC             | 1.2.9          |
-| WhateverGreen          | 1.5.9          |
-| AppleALC               | 1.7.2          |
+| Lilu                   | 1.6.1          |
+| VirtualSMC             | 1.3.0          |
+| WhateverGreen          | 1.6.0          |
+| AppleALC               | 1.7.3          |
 | IntelBluetoothFirmware | 2.1.0          |
 | IntelMausi             | 1.0.7          |
-| SMCProcessor           | 1.2.9          |
-| SMCSuperIO             | 1.2.9          |
+| SMCProcessor           | 1.3.0          |
+| SMCSuperIO             | 1.3.0          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
-| BlueToolFixup          | 2.6.2          |
+| BlueToolFixup          | 2.6.3          |
 
 
 
