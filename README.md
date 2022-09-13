@@ -3,7 +3,7 @@
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.8.4-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-12.5.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
 
-![Monterey 12](https://user-images.githubusercontent.com/58266242/175797574-659186e0-6856-45d4-b33f-1cda98078dac.png)
+![Monterey 12](https://user-images.githubusercontent.com/58266242/189781451-98193680-f914-4020-aeb5-69de084f6123.png)
 
 ## My PC Build
 <details>
