@@ -41,13 +41,13 @@
 | WhateverGreen          | 1.6.1          |
 | AppleALC               | 1.7.5          |
 | IntelBluetoothFirmware | 2.2.0          |
+| IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
 | SMCProcessor           | 1.3.0          |
 | SMCSuperIO             | 1.3.0          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
 | BlueToolFixup          | 2.6.3          |
-
 
 
 </details>
