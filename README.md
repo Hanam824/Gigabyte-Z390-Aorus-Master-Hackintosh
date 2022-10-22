@@ -1,6 +1,6 @@
 # Monterey Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.4-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.5-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-12.5.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
 
 ![Monterey 12](https://user-images.githubusercontent.com/58266242/189781451-98193680-f914-4020-aeb5-69de084f6123.png)
@@ -47,7 +47,7 @@
 | SMCSuperIO             | 1.3.0          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
-| BlueToolFixup          | 2.6.3          |
+| BlueToolFixup          | 2.6.4          |
 
 
 </details>
