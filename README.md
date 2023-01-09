@@ -1,4 +1,4 @@
-# Monterey Gigabyte Z390 Aorus Master (OpenCore)
+# Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.8.7-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-13.0.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
