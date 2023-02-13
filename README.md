@@ -3,7 +3,7 @@
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.8.8-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-13.2-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Ventura 13](https://user-images.githubusercontent.com/58266242/207083004-1b2dec90-15cf-49f9-8add-625b4647cdf2.png)
+![Ventura 13](https://user-images.githubusercontent.com/58266242/218504839-866a94f8-66b4-4263-be23-dbf9a40f3615.png)
 
 ## My PC Build
 <details>
