@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.7-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-13.0.1-brightgreen.svg)](https://www.apple.com/macos/monterey)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.8-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-13.2-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Monterey 13](https://user-images.githubusercontent.com/58266242/207083004-1b2dec90-15cf-49f9-8add-625b4647cdf2.png)
+![Ventura 13](https://user-images.githubusercontent.com/58266242/207083004-1b2dec90-15cf-49f9-8add-625b4647cdf2.png)
 
 ## My PC Build
 <details>
@@ -36,10 +36,10 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.2          |
+| Lilu                   | 1.6.3          |
 | VirtualSMC             | 1.3.0          |
-| WhateverGreen          | 1.6.2          |
-| AppleALC               | 1.7.7          |
+| WhateverGreen          | 1.6.3          |
+| AppleALC               | 1.7.8          |
 | IntelBluetoothFirmware | 2.2.0          |
 | IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
