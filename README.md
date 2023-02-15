@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.8-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-13.2-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-13.2.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Ventura 13](https://user-images.githubusercontent.com/58266242/218504839-866a94f8-66b4-4263-be23-dbf9a40f3615.png)
+![ventura1321](https://user-images.githubusercontent.com/58266242/218911240-54706c99-39dd-42c5-ac9f-8608a802a59b.png)
 
 ## My PC Build
 <details>
@@ -38,8 +38,8 @@
 |:---------------------- | -------------- |
 | Lilu                   | 1.6.3          |
 | VirtualSMC             | 1.3.0          |
-| WhateverGreen          | 1.6.3          |
-| AppleALC               | 1.7.8          |
+| WhateverGreen          | 1.6.4          |
+| AppleALC               | 1.7.9          |
 | IntelBluetoothFirmware | 2.2.0          |
 | IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
@@ -73,9 +73,10 @@
 
 # Tools
 * [Hackintool](https://github.com/headkaze/Hackintool)
+* [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
+* [Wifi-Bluetooth kext](https://github.com/OpenIntelWireless)
 * [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
-* [Wifi-Bluetooth kext](https://github.com/OpenIntelWireless)
 
 
 # Thanks
