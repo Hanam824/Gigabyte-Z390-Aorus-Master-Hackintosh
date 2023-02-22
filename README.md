@@ -65,13 +65,21 @@
   
 </details>
 
-# Resources
+## History
+<details>
+  <summary><strong>Changes</strong></summary>
+  
+  * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
+  
+</details>
+
+## Resources
 
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 * [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
 * [Dortania build-repo](https://github.com/dortania/build-repo/releases)
 
-# Tools
+## Tools
 * [Hackintool](https://github.com/headkaze/Hackintool)
 * [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
 * [Wifi-Bluetooth kext](https://github.com/OpenIntelWireless)
@@ -79,7 +87,7 @@
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
 
 
-# Thanks
+## Thanks
 * [cmer](https://github.com/cmer) : this is the first guide that I followed and try with Catalina 10.15.1
 * [AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make something well.
 * [Colin Sullender](https://github.com/shiruken) : Previous, I try many times but cannot boot into Macintosh. Thanks for using Intel CNVI in your system. I just rebuild USB Map kext and everything works.
