@@ -1,6 +1,6 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS-Stable](https://img.shields.io/badge/macOS-13.2.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
 ![ventura1321](https://user-images.githubusercontent.com/58266242/218911240-54706c99-39dd-42c5-ac9f-8608a802a59b.png)
@@ -36,15 +36,15 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.3          |
-| VirtualSMC             | 1.3.0          |
+| Lilu                   | 1.6.4          |
+| VirtualSMC             | 1.3.1          |
 | WhateverGreen          | 1.6.4          |
-| AppleALC               | 1.7.9          |
+| AppleALC               | 1.8.0          |
 | IntelBluetoothFirmware | 2.2.0          |
 | IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
-| SMCProcessor           | 1.3.0          |
-| SMCSuperIO             | 1.3.0          |
+| SMCProcessor           | 1.3.1          |
+| SMCSuperIO             | 1.3.1          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
 | BlueToolFixup          | 2.6.4          |
