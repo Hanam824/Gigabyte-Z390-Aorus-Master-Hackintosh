@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-13.2.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-13.3.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![ventura1321](https://user-images.githubusercontent.com/58266242/218911240-54706c99-39dd-42c5-ac9f-8608a802a59b.png)
+![ventura1331](https://user-images.githubusercontent.com/58266242/230706539-c691f4d6-7d39-4e17-8e26-b6c9b42d87e8.png)
 
 ## My PC Build
 <details>
