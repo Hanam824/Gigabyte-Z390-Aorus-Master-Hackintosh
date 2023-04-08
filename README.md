@@ -36,10 +36,10 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.4          |
+| Lilu                   | 1.6.5          |
 | VirtualSMC             | 1.3.1          |
-| WhateverGreen          | 1.6.4          |
-| AppleALC               | 1.8.0          |
+| WhateverGreen          | 1.6.5          |
+| AppleALC               | 1.8.1          |
 | IntelBluetoothFirmware | 2.2.0          |
 | IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
@@ -47,7 +47,7 @@
 | SMCSuperIO             | 1.3.1          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
-| BlueToolFixup          | 2.6.4          |
+| BlueToolFixup          | 2.6.5          |
 
 
 </details>
