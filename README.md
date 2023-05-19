@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.1-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-13.3.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-13.4-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![ventura1331](https://user-images.githubusercontent.com/58266242/230706539-c691f4d6-7d39-4e17-8e26-b6c9b42d87e8.png)
+![ventura134](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/d070aff4-28fa-430c-ab22-199aef6c7676)
 
 ## My PC Build
 <details>
@@ -38,8 +38,8 @@
 |:---------------------- | -------------- |
 | Lilu                   | 1.6.5          |
 | VirtualSMC             | 1.3.1          |
-| WhateverGreen          | 1.6.5          |
-| AppleALC               | 1.8.1          |
+| WhateverGreen          | 1.6.4          |
+| AppleALC               | 1.8.2          |
 | IntelBluetoothFirmware | 2.2.0          |
 | IntelBTPatcher         | 2.2.0          |
 | IntelMausi             | 1.0.7          |
@@ -47,7 +47,7 @@
 | SMCSuperIO             | 1.3.1          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.1.0          |
-| BlueToolFixup          | 2.6.5          |
+| BlueToolFixup          | 2.6.6          |
 
 
 </details>
