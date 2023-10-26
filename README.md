@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.9.5-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-14.0-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![macOS-Stable](https://img.shields.io/badge/macOS-14.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Sonoma140](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/b60a694b-d4e8-4991-b2ab-ee2201e0c7bf)
+![Sonoma141](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/158f5b48-3a9d-4e40-99f7-e732dc795990)
 
 ## My PC Build
 <details>
@@ -40,7 +40,7 @@
 | VirtualSMC             | 1.3.2          |
 | WhateverGreen          | 1.6.6          |
 | AppleALC               | 1.8.6          |
-| IntelBluetoothFirmware | 2.3.0          |
+| IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.3.0          |
 | IntelMausi             | 1.0.7          |
 | SMCProcessor           | 1.3.2          |
