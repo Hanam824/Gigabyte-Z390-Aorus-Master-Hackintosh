@@ -39,7 +39,7 @@
 | Lilu                   | 1.6.7          |
 | VirtualSMC             | 1.3.2          |
 | WhateverGreen          | 1.6.6          |
-| AppleALC               | 1.8.6          |
+| AppleALC               | 1.8.7          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.3.0          |
 | IntelMausi             | 1.0.7          |
