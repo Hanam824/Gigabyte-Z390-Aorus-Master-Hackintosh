@@ -1,7 +1,7 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.5-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-14.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-14.1.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
 ![Sonoma141](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/158f5b48-3a9d-4e40-99f7-e732dc795990)
 
