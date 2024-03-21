@@ -1,9 +1,10 @@
 # Sonoma Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.8-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-14.3-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.9-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-14.4-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Sonoma143](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/dc220c30-bdb3-4bac-946b-fff1a747141e)
+![Sonoma144](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/edb91bec-9e47-47dd-a7f4-5a2401727c3e)
+
 
 ## My PC Build
 <details>
@@ -41,7 +42,7 @@
 | WhateverGreen          | 1.6.6          |
 | AppleALC               | 1.8.8          |
 | IntelBluetoothFirmware | 2.4.0          |
-| IntelBTPatcher         | 2.3.0          |
+| IntelBTPatcher         | 2.4.0          |
 | IntelMausi             | 1.0.7          |
 | SMCProcessor           | 1.3.2          |
 | SMCSuperIO             | 1.3.2          |
