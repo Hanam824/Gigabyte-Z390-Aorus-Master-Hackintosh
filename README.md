@@ -1,9 +1,9 @@
 # Sonoma Gigabyte Z390 Aorus Master (OpenCore)
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-1.0.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-14.4.1-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![macOS-Stable](https://img.shields.io/badge/macOS-14.6-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![Sonoma1441](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/b07f78ab-45d9-4c97-8e41-18e1fb0fa878)
+![Sonoma146](https://github.com/user-attachments/assets/be29c526-fc46-4afb-9c8a-268fa5117f1c)
 
 
 ## My PC Build
