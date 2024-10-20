@@ -69,7 +69,13 @@
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  * 2024-10-20: Updated to macOS 15.0.1, fix bluetooth broken
   
+      <key>bluetoothInternalControllerInfo</key>
+      <data>AAAAAAAAAAAAAAAAAAA=</data>
+      <key>bluetoothExternalDongleFailed</key>
+      <data>AA==</data>
+      
   * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
   
 </details>
