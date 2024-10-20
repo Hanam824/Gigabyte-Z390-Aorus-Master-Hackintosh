@@ -1,9 +1,9 @@
 # Sonoma Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-14.6-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-15.0.1-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
 
-![Sonoma146](https://github.com/user-attachments/assets/be29c526-fc46-4afb-9c8a-268fa5117f1c)
+![Sequoia1501](https://github.com/user-attachments/assets/8147bd6f-f95e-447c-99f5-386c31d5f145)
 
 
 ## My PC Build
@@ -37,15 +37,15 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.7          |
-| VirtualSMC             | 1.3.2          |
-| WhateverGreen          | 1.6.6          |
-| AppleALC               | 1.8.8          |
+| Lilu                   | 1.6.9          |
+| VirtualSMC             | 1.3.4          |
+| WhateverGreen          | 1.6.8          |
+| AppleALC               | 1.9.2          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.4.0          |
 | IntelMausi             | 1.0.7          |
-| SMCProcessor           | 1.3.2          |
-| SMCSuperIO             | 1.3.2          |
+| SMCProcessor           | 1.3.4          |
+| SMCSuperIO             | 1.3.4          |
 | USBMap                 | Manual         |
 | itlwm                  | 2.2.0          |
 | BlueToolFixup          | 2.6.9          |
