@@ -69,15 +69,43 @@
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  
   * 2024-10-20: Updated to macOS 15.0.1, fix bluetooth broken
   
-      <key>bluetoothInternalControllerInfo</key>
-      <data>AAAAAAAAAAAAAAAAAAA=</data>
-      <key>bluetoothExternalDongleFailed</key>
-      <data>AA==</data>
+        <key>bluetoothInternalControllerInfo</key>
+        <data>AAAAAAAAAAAAAAAAAAA=</data>
+        <key>bluetoothExternalDongleFailed</key>
+        <data>AA==</data>
       
   * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
   
+</details>
+
+## Hardware acceleration
+<details>
+  <summary><strong>iMac19.1</strong></summary>
+  
+  * This iMac model appeared in 2019. There are 3 technical details that make it very similar to my PC:
+    * Intel 9th generation Coffee Lake Refresh processor
+    * iGPU Intel UHD Graphics 630
+    * dGPU AMD Radeon Pro 570X / 575X / 580X.
+  * On this real Mac the dGPU can be used to display the main graphics with good performance while the iGPU can contribute hardware video encoding and decoding tasks, releasing the CPU from these tasks. This is what you are looking for when selecting this SMBIOS: dGPU graphics / iGPU encoding. To achieve this you have to:
+    * enable iGPU in BIOS
+    * put the dGPU as main card
+    * cable to monitor from the dGPU
+    * recent versions of Lilu and WhateverGreen
+    * SMBIOS from iMac19,1
+    * iGPU in headless mode in config.plist, adding these lines in DeviceProperties / Add (OpenCore)
+</details>
+
+<details>
+  <summary><strong>iMacPro1,1</strong></summary>
+
+  * This iMac model appeared in 2017. It has a processor from a different family than my PC, it is Intel Xeon with 8, 10, 14 or 18 cores. But being a Mac without iGPU (it only has a Radeon Pro Vega 56 dGPU), it allows us to disable our iGPU in BIOS to obtain an equivalent system in which the dGPU serves both to bring graphics to the monitor and for video encoding and decoding tasks. This is what you are looking for when selecting this SMBIOS: dGPU graphics and encoding. To achieve this you have to:
+    * disable iGPU in BIOS
+    * cable to monitor from the dGPU
+    * recent versions of Lilu and WhateverGreen
+    * SMBIOS from iMacPro1,1.
 </details>
 
 ## Resources
