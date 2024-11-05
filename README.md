@@ -120,6 +120,7 @@
 * [Wifi-Bluetooth kext](https://github.com/OpenIntelWireless)
 * [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
+* [HiDPI](https://github.com/xzhih/one-key-hidpi)
 
 
 ## Thanks
