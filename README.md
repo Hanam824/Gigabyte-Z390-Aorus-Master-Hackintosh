@@ -1,7 +1,7 @@
 # Sonoma Gigabyte Z390 Aorus Master (OpenCore)
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-1.0.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-15.0.1-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
+[![macOS-Stable](https://img.shields.io/badge/macOS-15.1-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
 
 ![Sequoia1501](https://github.com/user-attachments/assets/8147bd6f-f95e-447c-99f5-386c31d5f145)
 
