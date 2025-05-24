@@ -22,10 +22,10 @@
   | Case              | Cooler Master MasterCase H500M ARGB                      |                                                       |
   | Monitor           | Dell Display Monitor SE2416H 23.8inches                  |                                                       |
   | LAN               | Intel® i219v GbE LAN                                     | I use LAN for network                                 |
-  | Wifi & BT         | Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)   | I just use bluetooth for JBL FLIP 5 Speaker.          |
-  |                   | Include **Intel Wireless-AC 9560** module inside         | If you want native wifi control.                      |
-  |                   |                                                          | Use AirportItlwm instead but slow [speed](image)      |
-  |                   |                                                          | Use Itlwm and HeliPort for increase wifi speed        |
+  | Wifi & BT         |~~Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)~~| ~~I just use bluetooth for JBL FLIP 5 Speaker.~~      |
+  |                   |~~Include **Intel Wireless-AC 9560** module inside~~      | ~~If you want native wifi control.~~                  |
+  |                   | Replace Intel Wifi Card with BCM943602CS on PCIe port    | ~~Use AirportItlwm instead but slow [speed](image)~~  |
+  |                   |                                                          | ~~Use Itlwm and HeliPort for increase wifi speed~~    |
   
 </details>
 
@@ -46,8 +46,10 @@
 | SMCProcessor           | 1.3.6          |
 | SMCSuperIO             | 1.3.6          |
 | USBMap                 | Manual         |
-| itlwm                  | 2.3.0          |
-| BlueToolFixup          | 2.6.9          |
+| AMFIPass               | 1.4.1          |
+| IOSkywalkFamily        | 1.0            |
+| IO80211FamilyLegacy    | 1200.12.2b1    |
+| BlueToolFixup          | 2.7.0          |
 
 
 </details>
@@ -60,14 +62,21 @@
   * ✅ iMessage
   * ✅ Sleep/Wake
   * ✅ Bluetooth & Wi-Fi
-  * ☑️ Airdrop
-  * ☑️ Handoff
+  * ✅ Airdrop
+  * ✅ Handoff
   
 </details>
 
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  
+  * 2025-05-24: remove Intel Wifi Card, Installed BCM943602CS Follow this [video](https://youtu.be/d7F5d7EF334?t=713) for adjusting.
+
+        remap USBMap.Kext for disable HS14(Intel Wifi Card).
+        Keep 15 port below:
+        HS01 HS03 HS04 HS05 HS09 HS10 HS11 HS12 HS13
+        SS01 SS03 SS04 SS05 SS09 SS10
   
   * 2024-10-20: Updated to macOS 15.0.1, fix bluetooth broken
   
@@ -120,9 +129,11 @@
 * [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
 * [HiDPI](https://github.com/xzhih/one-key-hidpi)
+* [OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
 
 
 ## Thanks
 * [cmer](https://github.com/cmer) : this is the first guide that I followed and try with Catalina 10.15.1
 * [AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make something well.
 * [Colin Sullender](https://github.com/shiruken) : Previous, I try many times but cannot boot into Macintosh. Thanks for using Intel CNVI in your system. I just rebuild USB Map kext and everything works.
+* [EliteMacx86 Administrator](https://elitemacx86.com/threads/how-to-fix-broadcom-wifi-on-macos-sonoma-and-later.1415/): The guidance is very detailed for rolling back the kext to macOS 13 for the previous native Broadcom Wi-Fi card.
