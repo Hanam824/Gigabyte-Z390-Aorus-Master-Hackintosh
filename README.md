@@ -1,9 +1,9 @@
 # Sequoia Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.4-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-15.5-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
+[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-15.7-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
 
-![Sequoia1550](https://github.com/user-attachments/assets/c67bdcb4-e09e-4043-a55b-06d05b891d04)
+<img width="392" height="655" alt="Sequoia157" src="https://github.com/user-attachments/assets/44e669bc-3df2-43bf-8f99-e0db8ba82def" />
 
 ## My PC Build
 <details>
@@ -28,7 +28,6 @@
   |                   |                                                          | ~~Use Itlwm and HeliPort for increase wifi speed~~    |
   
 </details>
-
 <details>
 
 <summary><strong>Kernel extensions</strong></summary>
@@ -36,15 +35,16 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.7.0          |
-| VirtualSMC             | 1.3.6          |
-| WhateverGreen          | 1.6.9          |
-| AppleALC               | 1.9.4          |
+| Lilu                   | 1.7.1          |
+| VirtualSMC             | 1.3.7          |
+| SMCProcessor           | 1.3.7          |
+| SMCSuperIO             | 1.3.7          |
+| RestrictEvents         | 1.1.6          |
+| WhateverGreen          | 1.7.0          |
+| AppleALC               | 1.9.5          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.4.0          |
 | IntelMausi             | 1.0.8          |
-| SMCProcessor           | 1.3.6          |
-| SMCSuperIO             | 1.3.6          |
 | USBMap                 | Manual         |
 | AMFIPass               | 1.4.1          |
 | IOSkywalkFamily        | 1.0            |
@@ -53,7 +53,6 @@
 
 
 </details>
-
 <details>
   <summary><strong>Working ✅ / Not Working ☑️</strong></summary>
   
@@ -67,10 +66,41 @@
   
 </details>
 
+## Macos Tahoe 26
+<details>
+  <summary><strong>Change SMBIOS</strong></summary>
+  
+  * Use MacPro7,1
+    * Apple mark this version is the latest verison support Mac Intel.
+  * Security
+    * use j160
+  * [full](https://www.tonymacx86.com/threads/howto-macos-26-tahoe-with-opencore-1-0-5-z390-i9-9900-rx-6600-xt.332345/)
+</details>
+<details>
+  <summary><strong>No Sound</strong></summary>
+  
+  * Apple drop Apple HDA. inject old from [link](https://github.com/chris1111/Kext-Droplet-macOS?tab=readme-ov-file)
+    * [simple loader](https://www.insanelymac.com/forum/topic/361429-simpleloader-kext-installer-utility/)
+</details>
+<details>
+  <summary><strong>Wifi/BlueTooth</strong></summary>
+  
+  * [reddit](https://www.reddit.com/r/hackintosh/comments/1gvu5n1/broadcom_wifi_on_macos_sonoma_and_sequoia_fenvi/)
+    * aa
+</details>
+<details>
+  <summary><strong>Power Management</strong></summary>
+  
+  * [link](https://basic.heavietnam.com/universal/fix-power-management)
+    * [link](https://vnohackintosh.com/docs/post-install/fixing-power-management/)
+</details>
+
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
-  
+
+  * 2025-09-20: change SMBIOS to MacPro7,1. Preparing for macOS Tahoe 26.
+
   * 2025-05-24: remove Intel Wifi Card, Installed BCM943602CS Follow this [video](https://youtu.be/d7F5d7EF334?t=713) for adjusting.
 
         remap USBMap.Kext for disable HS14(Intel Wifi Card).
@@ -105,7 +135,6 @@
     * SMBIOS from iMac19,1
     * iGPU in headless mode in config.plist, adding these lines in DeviceProperties / Add (OpenCore)
 </details>
-
 <details>
   <summary><strong>iMacPro1,1</strong></summary>
 
@@ -117,7 +146,6 @@
 </details>
 
 ## Resources
-
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 * [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
 * [Dortania build-repo](https://github.com/dortania/build-repo/releases)
