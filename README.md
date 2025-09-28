@@ -26,6 +26,8 @@
   |                   |~~Include **Intel Wireless-AC 9560** module inside~~      | ~~If you want native wifi control.~~                  |
   |                   | Replace Intel Wifi Card with BCM943602CS on PCIe port    | ~~Use AirportItlwm instead but slow [speed](image)~~  |
   |                   |                                                          | ~~Use Itlwm and HeliPort for increase wifi speed~~    |
+
+  [For more information](https://pcpartpicker.com/list/twpvrM)
   
 </details>
 <details>
