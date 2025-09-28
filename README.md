@@ -86,7 +86,7 @@
   <summary><strong>Wifi/BlueTooth</strong></summary>
   
   * [reddit](https://www.reddit.com/r/hackintosh/comments/1gvu5n1/broadcom_wifi_on_macos_sonoma_and_sequoia_fenvi/)
-    * aa
+    * [reference](https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-458#post-2426553)
 </details>
 <details>
   <summary><strong>Power Management</strong></summary>
