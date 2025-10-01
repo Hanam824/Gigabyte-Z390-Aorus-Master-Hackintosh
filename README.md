@@ -147,6 +147,9 @@
     * SMBIOS from iMacPro1,1.
 </details>
 
+## USB Port Map
+See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master.
+
 ## Resources
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 * [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
