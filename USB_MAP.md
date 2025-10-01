@@ -31,7 +31,7 @@ Rear: 8 ports
  * HS04/SS04: USB 3.1
 
 Internal:
- * HS13: F-USB2: for BCM94360CS2 Bluetooth
+ * HS13: F-USB2: for BCM943602CS Bluetooth
 
 **Total:** 14 ports
 
