@@ -1,9 +1,9 @@
 # Ventura Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.2-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-13.4-brightgreen.svg)](https://www.apple.com/macos/ventura)
+[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.6-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-13.7.8-brightgreen.svg)](https://www.apple.com/macos/ventura)
 
-![ventura134](https://github.com/Hanam824/Gigabyte-Z390-Aorus-Master-Hackintosh/assets/58266242/d070aff4-28fa-430c-ab22-199aef6c7676)
+<img width="348" height="611" alt="ventura_1378" src="https://github.com/user-attachments/assets/2bad2bde-2afe-4bad-98dd-0ad8a7c7b406" />
 
 ## My PC Build
 <details>
@@ -12,20 +12,18 @@
   | Category          | Component                                                | Note                                                  |
   | ----------------- | -------------------------------------------------------  | ----------------------------------------------------- |
   | CPU               | Intel Core i9-9900K                                      |                                                       |
-  | GPU               | MSI Radeon RX 5700 XT EVOKE OC Graphics Board            | Native support                                        |
+  | GPU               | Asus RX 6900XT 16GB GDDR6 TUF Gaming                     | Native support                                        |
   | Motherboard       | Gigabyte Z390 AORUS MASTER                               |                                                       |
-  | Storage (macOS)   | Silicon Power SSD 512GB NVMe 1.3 P34A80 (`M2M` slot)     | Internal NVME                                         |
-  | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2A` slot)          | Internal NVME                                         |
-  | Memory            | Corsair Vengeance LPX 32GB (2x16GB) 3200MHz DDR4         |                                                       |
+  | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2M` slot)          | Internal NVME, Disable `PCIe Storage Dev on Port 17` on BIOS.|
+  | Intel Optane      | MEMPEK1W032GAXT M.2 80mm PCIe 3.0  (`M2P` slot)          | Kernel Panic while macOS install on Internal NVME M2A. Enable `PCIe Storage Dev on Port 21` on BIOS. Cannot disable, use NVMeFix Kext + boot arg nvme=-1  |
+  | Storage (macOS)   | Silicon Power SSD 512GB NVMe 1.3 P34A80                  | Box Lexar E6, Front USB C 3.1 Gen 1                   |
+  | Memory            | Corsair Vengeance LPX 64GB (4x16GB) 3200MHz DDR4         |                                                       |
   | CPU Cooler        | EKWB EK-KIT Performance Series PC Watercooling Kit P360  |                                                       |
   | Power Supply      | Corsair RMX Series 80PLUS Gold 1000W                     |                                                       |
   | Case              | Cooler Master MasterCase H500M ARGB                      |                                                       |
-  | Monitor           | Dell Display Monitor SE2416H 23.8inches                  |                                                       |
+  | Monitor           | LG UHD 4K IPS VESA DisplayHDR™ 400 27UP600K-W            |                                                       |
   | LAN               | Intel® i219v GbE LAN                                     | I use LAN for network                                 |
-  | Wifi & BT         | Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)   | I just use bluetooth for JBL FLIP 5 Speaker.          |
-  |                   | Include **Intel Wireless-AC 9560** module inside         | If you want native wifi control.                      |
-  |                   |                                                          | Use AirportItlwm instead but slow [speed](image)      |
-  |                   |                                                          | Use Itlwm and HeliPort for increase wifi speed        |
+  | Wifi & BT         | Broadcom BCM943602CS 802.11 AC + Adapter PCIe x1         | Native support for both wifi and bluetooth, airdrop   |
   
 </details>
 
@@ -36,19 +34,15 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.6.5          |
-| VirtualSMC             | 1.3.2          |
-| WhateverGreen          | 1.6.6          |
-| AppleALC               | 1.8.3          |
-| IntelBluetoothFirmware | 2.2.0          |
-| IntelBTPatcher         | 2.2.0          |
-| IntelMausi             | 1.0.7          |
+| Lilu                   | 1.7.1          |
+| NVMeFix                | 1.1.3          |
+| VirtualSMC             | 1.3.7          |
+| RestrictEvents         | 1.1.6          |
 | SMCProcessor           | 1.3.2          |
 | SMCSuperIO             | 1.3.2          |
+| AppleALC               | 1.8.3          |
+| IntelMausi             | 1.0.7          |
 | USBMap                 | Manual         |
-| itlwm                  | 2.2.0          |
-| BlueToolFixup          | 2.6.6          |
-
 
 </details>
 
@@ -60,8 +54,8 @@
   * ✅ iMessage
   * ✅ Sleep/Wake
   * ✅ Bluetooth & Wi-Fi
-  * ☑️ Airdrop
-  * ☑️ Handoff
+  * ✅ Airdrop
+  * ✅ Handoff
   
 </details>
 
@@ -69,6 +63,7 @@
 <details>
   <summary><strong>Changes</strong></summary>
   
+  * remove WhateverGreen, macpro7,1 only use dedicated GPU, disable IGPU
   * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
   
 </details>
