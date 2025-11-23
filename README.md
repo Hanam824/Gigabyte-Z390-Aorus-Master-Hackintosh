@@ -63,8 +63,11 @@
 <details>
   <summary><strong>Changes</strong></summary>
   
-  * remove WhateverGreen, macpro7,1 only use dedicated GPU, disable IGPU
-  * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
+  * **[23/11/2025]** enable Resize BAR (Smart Access Memory) on RX6900XT.
+     - In BIOS changes `Above 4G Decoding` → Enable, `Re-Size BAR support` → Auto
+     - macOS limitation to address BARs over 1 GB. `ResizeAppleGpuBars` set to `0` (BAR0). `ResizeGpuBars` set to `-1` for windows and motherboard handling during booting in windows.
+  * **[1/10/2025]** remove WhateverGreen, macpro7,1 only use dedicated GPU, disable IGPU.
+  * **[18/02/2023]** remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
   
 </details>
 
