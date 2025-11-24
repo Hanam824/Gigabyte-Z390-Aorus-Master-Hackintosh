@@ -62,7 +62,11 @@
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
-  
+
+  * **[24/11/2025]** support AppleVTD. Follow by [this guide](https://dortania.github.io/Getting-Started-With-ACPI/Universal/dmar-methods/manual.html)
+     - In BIOS changes `VT-d` -> Enable
+     - On windows, dump all DSDT then select Fix DMAR. use generated config.plist for applying back to current config.plist
+     - In config.plist, Kernel/Quirks/DisableIoMapper -> `uncheck`
   * **[23/11/2025]** enable Resize BAR (Smart Access Memory) on RX6900XT.
      - In BIOS changes `Above 4G Decoding` → Enable, `Re-Size BAR support` → Auto
      - macOS limitation to address BARs over 1 GB. `ResizeAppleGpuBars` set to `0` (BAR0). `ResizeGpuBars` set to `-1` for windows and motherboard handling during booting in windows.
