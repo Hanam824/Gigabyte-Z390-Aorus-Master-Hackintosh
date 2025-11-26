@@ -63,6 +63,11 @@
 <details>
   <summary><strong>Changes</strong></summary>
 
+  * **[26/11/2025]** fix Power Management by [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html).
+     - Should remove before udpate to new macOS. re-create again after updated.
+     - Using [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend) to generate CPUFriendDataProvider.kext
+     - Copy [CPUFriend.kext](https://github.com/acidanthera/CPUFriend/releases) and generated CPUFriendDataProvider.kext to Kexts folder.
+     - I recommend the kext variant to avoid any headaches with data injection into Windows and Linux.
   * **[24/11/2025]** support AppleVTD. Follow by [this guide](https://dortania.github.io/Getting-Started-With-ACPI/Universal/dmar-methods/manual.html)
      - In BIOS changes `VT-d` -> Enable
      - On windows, dump all DSDT then select Fix DMAR. use generated config.plist for applying back to current config.plist
