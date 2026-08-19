@@ -37,13 +37,13 @@
 
 | Kext                   | Version        |
 |:---------------------- | -------------- |
-| Lilu                   | 1.7.1          |
+| Lilu                   | 1.7.2          |
 | VirtualSMC             | 1.3.7          |
 | SMCProcessor           | 1.3.7          |
 | SMCSuperIO             | 1.3.7          |
 | RestrictEvents         | 1.1.6          |
 | WhateverGreen          | 1.7.0          |
-| AppleALC               | 1.9.5          |
+| AppleALC               | 1.9.7          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.4.0          |
 | IntelMausi             | 1.0.8          |
@@ -69,6 +69,20 @@
 </details>
 
 ## Macos Tahoe 26
+<details>
+  <summary><strong>BIOS Setup (F13a)</strong></summary>
+  
+  * Enable VT-d
+  * Disable Security
+
+</details>
+<details>
+  <summary><strong>During Installation</strong></summary>
+  
+  * Unplug wired enthernet if you got loop as below
+    * <img width="750" height="1000" alt="patch-macos-increament" src="https://github.com/user-attachments/assets/8cb95a92-7caa-443e-b5ef-e9bd18d70a75" />
+
+</details>
 <details>
   <summary><strong>Change SMBIOS</strong></summary>
   
@@ -100,6 +114,7 @@
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  * 2026-08-16: update macOS 26.6.2
 
   * 2025-09-20: change SMBIOS to MacPro7,1. Preparing for macOS Tahoe 26.
 
