@@ -1,9 +1,10 @@
-# Sequoia Gigabyte Z390 Aorus Master (OpenCore)
+# Tahoe Gigabyte Z390 Aorus Master (OpenCore)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS-Stable](https://img.shields.io/badge/macOS-15.7-brightgreen.svg)](https://www.apple.com/macos/macos-sequoia)
+[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.7-blue.svg)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS-Stable](https://img.shields.io/badge/macOS-26.6-brightgreen.svg)](https://www.apple.com/macos/macos-tahoe)
 
-<img width="392" height="655" alt="Sequoia157" src="https://github.com/user-attachments/assets/44e669bc-3df2-43bf-8f99-e0db8ba82def" />
+<img width="392" height="660" alt="Tahoe266" src="https://github.com/user-attachments/assets/7eaae57f-1dae-40dd-bf61-d7af6cbf7731" />
+
 
 ## My PC Build
 <details>
@@ -12,22 +13,22 @@
   | Category          | Component                                                | Note                                                  |
   | ----------------- | -------------------------------------------------------  | ----------------------------------------------------- |
   | CPU               | Intel Core i9-9900K                                      |                                                       |
-  | GPU               | MSI Radeon RX 5700 XT EVOKE OC Graphics Board            | Native support                                        |
+  | GPU               | ASUS TUF GAMING Radeon™ RX 6900 XT OC Edition            | Native support, WhateverGreen kext no needed          |
   | Motherboard       | Gigabyte Z390 AORUS MASTER                               |                                                       |
-  | Storage (macOS)   | Silicon Power SSD 512GB NVMe 1.3 P34A80 (`M2M` slot)     | Internal NVME                                         |
-  | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2A` slot)          | Internal NVME                                         |
-  | Memory            | Corsair Vengeance LPX 32GB (2x16GB) 3200MHz DDR4         |                                                       |
+  | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2M` slot)          | Internal NVME                                         |
+  | Storage (macOS)   | Toshiba BG4 KBG40ZNT512G NVMe      (`M2A` slot)          | Internal NVME                                         |
+  | Memory            | Corsair Vengeance LPX 64GB (4x16GB) 3200MHz DDR4         |                                                       |
   | CPU Cooler        | EKWB EK-KIT Performance Series PC Watercooling Kit P360  |                                                       |
   | Power Supply      | Corsair RMX Series 80PLUS Gold 1000W                     |                                                       |
   | Case              | Cooler Master MasterCase H500M ARGB                      |                                                       |
-  | Monitor           | Dell Display Monitor SE2416H 23.8inches                  |                                                       |
+  | Monitor           | LG 27UP600K-W 27inch 4k                                  |                                                       |
   | LAN               | Intel® i219v GbE LAN                                     | I use LAN for network                                 |
   | Wifi & BT         |~~Intel® CNVi 802.11ac 2x2 Wave 2 WIFI & BT5  (on-board)~~| ~~I just use bluetooth for JBL FLIP 5 Speaker.~~      |
   |                   |~~Include **Intel Wireless-AC 9560** module inside~~      | ~~If you want native wifi control.~~                  |
   |                   | Replace Intel Wifi Card with BCM943602CS on PCIe port    | ~~Use AirportItlwm instead but slow [speed](image)~~  |
   |                   | and connect on F-USB2 (HS13) for bluetooth               | ~~Use Itlwm and HeliPort for increase wifi speed~~    |
 
-  [For more information](https://pcpartpicker.com/list/twpvrM)
+  [For more information](https://pcpartpicker.com/list/4F9K2k)
   
 </details>
 <details>
@@ -42,7 +43,7 @@
 | SMCProcessor           | 1.3.7          |
 | SMCSuperIO             | 1.3.7          |
 | RestrictEvents         | 1.1.6          |
-| WhateverGreen          | 1.7.0          |
+| ~~WhateverGreen~~      | ~~1.7.0~~      |
 | AppleALC               | 1.9.7          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.4.0          |
@@ -178,6 +179,9 @@ See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master
 * [OC X Gen](https://github.com/Pavo-IM/OC-Gen-X)
 * [HiDPI](https://github.com/xzhih/one-key-hidpi)
 * [OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
+* [OpenCore-Legacy-Patcher-Custom-Tahoe](https://github.com/kgp-macPro/OCLP-CustoMac)
+* [HDAUniversal](https://github.com/cmalf/HP-EliteDesk-800-G4-G5-Hackintosh/releases)
+* [Codec-Info](https://olarila.com/topic/46666-codec-info-for-macos-analog-hda-codec-detector-for-applehda-applealc-voodoohda-and-hdauniversal/)
 
 
 ## Thanks
@@ -185,3 +189,4 @@ See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master
 * [AudioGod](https://www.insanelymac.com/forum/topic/340936-audiogods-aorus-z390-master-patched-dsdt-efi-for-catalina-mini-guide-and-discussion/) : Currently, I use from him and change a little bit to make something well.
 * [Colin Sullender](https://github.com/shiruken) : Previous, I try many times but cannot boot into Macintosh. Thanks for using Intel CNVI in your system. I just rebuild USB Map kext and everything works.
 * [EliteMacx86 Administrator](https://elitemacx86.com/threads/how-to-fix-broadcom-wifi-on-macos-sonoma-and-later.1415/): The guidance is very detailed for rolling back the kext to macOS 13 for the previous native Broadcom Wi-Fi card.
+* [lzhoang2801](https://github.com/kgp-macPro/OCLP-CustoMac): A custom from from original OpenCore-Legacy-Patcher, this is bring back AppleHDA for sound and BCM94360CS2 for bluetooth + wifi.
