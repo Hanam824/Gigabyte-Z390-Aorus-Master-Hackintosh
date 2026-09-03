@@ -16,6 +16,14 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
+                    <string>Replacement DMAR table with Reserved Memory Regions stripped - requires DMAR table be dropped</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>DMAR.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
                     <string>Generic USBX device for USB power properties</string>
                     <key>Enabled</key>
                     <true/>
@@ -24,7 +32,22 @@
                 </dict>
             </array>
             <key>Delete</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>All</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string>Drop DMAR Table</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>OemTableId</key>
+                    <data>AAAAAAAAAAA=</data>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RE1BUg==</data>
+                </dict>
+            </array>
             <key>Patch</key>
             <array/>
             <key>Quirks</key>
@@ -387,17 +410,17 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>IntelMausi.kext</string>
+                    <string>IntelMausiEthernet.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.8 | Intel Ethernet LAN</string>
+                    <string>V3.0.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelMausi</string>
+                    <string>Contents/MacOS/IntelMausiEthernet</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
-                    <string>15.0.0</string>
+                    <string></string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -507,7 +530,7 @@
                 <key>CustomSMBIOSGuid</key>
                 <true/>
                 <key>DisableIoMapper</key>
-                <true/>
+                <false/>
                 <key>DisableIoMapperMapping</key>
                 <false/>
                 <key>DisableLinkeditJettison</key>
