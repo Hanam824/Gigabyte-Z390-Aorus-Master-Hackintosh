@@ -13,6 +13,15 @@
 - `EFI/OC/Kexts/CPUFriend.kext` (official acidanthera 1.3.0 release, checksum-verified against the GitHub release download)
 - Matching `Kernel > Add` entry in `config.plist`, positioned after `Lilu.kext`
 
+## `plugin-type` / SSDT-PLUG — why it's *not* being re-added here
+CPUFriend needs `plugin-type=1` set on the CPU for `X86PlatformPlugin`/`AppleACPICPU` to spawn in a way CPUFriend can hook. Historically that came from `SSDT-PLUG.aml`. This repo's `History` shows `SSDT-PLUG` was deliberately removed ("due to macOS version >= 12.3") — confirmed to be because the Z390 Aorus Master's **native DSDT already defines `plugin-type` for CPU0**, so a separate `SSDT-PLUG.aml` would be redundant and risks a duplicate/conflicting `plugin-type` injection (a known cause of kernel panics on modern macOS). **Do not re-add `SSDT-PLUG.aml`** — CPUFriend should hook into the native ACPI-provided `plugin-type` without it.
+
+Sanity-check this assumption once booted, before assuming CPUFriend is doing anything:
+```
+ioreg -l -p IODeviceTree -w0 | grep -i plugin-type
+```
+If nothing comes back, `plugin-type` isn't actually set anywhere and CPUFriend has nothing to hook — that would need separate investigation (do **not** just drop `SSDT-PLUG.aml` back in without checking for a conflict first).
+
 ## What still needs to happen on real hardware (cannot be done from here)
 Generating `CPUFriendDataProvider.kext` requires reading live `ioreg` data from your actual CPU while booted — this has to be done on your Mac.
 
@@ -26,8 +35,21 @@ Keep everything else (kexts, ACPI, DeviceProperties) unchanged. This is a throwa
 ### Step 2 — Boot and run CPUFriendFriend
 1. Boot into macOS as `iMacPro1,1`.
 2. Download [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend) and run `./CPUFriendFriend.command`.
-3. When prompted for LFM/EPP/Perf Bias, you can accept the tool's defaults — the point of this technique is to transplant Apple's own real `iMacPro1,1` calibration, not hand-tune new values. Only deviate if you specifically want a different performance/power-saving bias (see EPP table below).
+3. When prompted for LFM/EPP/Perf Bias, you can accept the tool's defaults — the point of this technique is to transplant Apple's own real `iMacPro1,1` calibration, not hand-tune new values. Only deviate if you specifically want a different performance/power-saving bias (see tables below).
 4. It outputs a `CPUFriendDataProvider.kext` (prefer this over the SSDT variant, per CPUFriend's own instructions, to avoid injection headaches).
+
+**LFM (Low Frequency Mode) quick reference**, if you'd rather not look up the i9-9900K's TDP-down frequency on Intel ARK (source: [basic.heavietnam.com power management guide](https://basic.heavietnam.com/universal/fix-power-management), already linked from this README):
+
+| CPU/SMBIOS class | LFM |
+|---|---|
+| Laptop Gen 5+ | `0x08` |
+| **Desktop Gen 5+ (i9-9900K falls here)** | **`0x0A`** |
+| Haswell/Broadwell HEDT/Server (X99) | `0x0D` |
+| Skylake+ HEDT/Server | `0x0C` |
+
+Manual fallback formula: `LFM_MHz = max_clock_GHz / 2 × 1000`, then hex-encode `LFM_MHz / 100`. E.g. base clock 3.6GHz → 1.8GHz → 1800MHz → `1800/100=18` → `0x12`.
+
+**EPP (Energy Performance Preference)**:
 
 | EPP hex | Profile |
 |---|---|
