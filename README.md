@@ -195,6 +195,8 @@ Optional, for iGPU + dGPU hybrid setups (not required for the default build abov
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  * 2026-09-16: [experiment/broadcomvtd-ioMapperMapping] Built on top of `experiment/broadcomvtd`, additionally sets `DisableIoMapperMapping=true` to test the OpenCore quirk that replaced `CaseySJ/Ventura-AppleVTD-Patch`'s manual `IOPCIBridge` patch, documented to fix WiFi/Ethernet dying under AppleVTD specifically on Z390 Designare/Z490 Vision D. Attempts to resolve the Ethernet connect/disconnect loop while keeping AppleVTD and Wi-Fi. Pending real-hardware test results.
+
   * 2026-09-16: [experiment/broadcomvtd] Added `BroadcomVTD.kext` 0.2.17 (experimental) to test whether legacy Broadcom Wi-Fi/BT can coexist with AppleVTD enabled on Tahoe, per [Mieze/IntelMausiEthernet#50](https://github.com/Mieze/IntelMausiEthernet/issues/50) and [kgp-macPro/BroadcomVTD-Tahoe](https://github.com/kgp-macPro/BroadcomVTD-Tahoe). Config otherwise unchanged (`DisableIoMapper=false`, patched `SSDT-DMAR.aml`). Pending real-hardware test results.
 
   * 2026-08-16: update macOS 26.6.2
