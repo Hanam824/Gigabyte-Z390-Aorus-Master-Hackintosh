@@ -38,16 +38,16 @@ Keep everything else (kexts, ACPI, DeviceProperties) unchanged. This is a throwa
 3. When prompted for LFM/EPP/Perf Bias, you can accept the tool's defaults — the point of this technique is to transplant Apple's own real `iMacPro1,1` calibration, not hand-tune new values. Only deviate if you specifically want a different performance/power-saving bias (see tables below).
 4. It outputs a `CPUFriendDataProvider.kext` (prefer this over the SSDT variant, per CPUFriend's own instructions, to avoid injection headaches).
 
-**LFM (Low Frequency Mode) quick reference**, if you'd rather not look up the i9-9900K's TDP-down frequency on Intel ARK (source: [basic.heavietnam.com power management guide](https://basic.heavietnam.com/universal/fix-power-management), already linked from this README):
+**LFM (Low Frequency Mode) for the i9-9900K specifically:** the usual method — look up the CPU's TDP-down frequency on [Intel ARK](https://www.intel.com/content/www/us/en/products/sku/186605/intel-core-i99900k-processor-16m-cache-up-to-5-00-ghz/specifications.html) — is a dead end for this chip. ARK confirms **Base 3.60GHz / Max Turbo 5.00GHz / TDP 95W**, but lists **no TDP-down frequency at all** (that field only exists for configurable-TDP/mobile SKUs; the 9900K is a fixed-TDP desktop part). Use the quick-reference bucket instead (source: [basic.heavietnam.com power management guide](https://basic.heavietnam.com/universal/fix-power-management), already linked from this README):
 
 | CPU/SMBIOS class | LFM |
 |---|---|
 | Laptop Gen 5+ | `0x08` |
-| **Desktop Gen 5+ (i9-9900K falls here)** | **`0x0A`** |
+| **Desktop Gen 5+ (i9-9900K falls here) → recommended: `0x0A`** | **`0x0A`** |
 | Haswell/Broadwell HEDT/Server (X99) | `0x0D` |
 | Skylake+ HEDT/Server | `0x0C` |
 
-Manual fallback formula: `LFM_MHz = max_clock_GHz / 2 × 1000`, then hex-encode `LFM_MHz / 100`. E.g. base clock 3.6GHz → 1.8GHz → 1800MHz → `1800/100=18` → `0x12`.
+(The manual `max_clock/2` formula from the same guide is a worse fit here — it's ambiguous whether "max" means base or turbo for this chip, and produces a made-up value rather than a real hardware spec. Stick with `0x0A` unless you have a specific reason to tune it after testing.)
 
 **EPP (Energy Performance Preference)**:
 
