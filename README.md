@@ -75,6 +75,7 @@ If something doesn't match your hardware (Wi-Fi card, GPU, storage), read the re
 | IOSkywalkFamily        | 1.0            |
 | IO80211FamilyLegacy    | 1200.12.2b1    |
 | BlueToolFixup          | 2.7.0          |
+| BroadcomVTD ⚠️ EXPERIMENTAL | 0.2.17    |
 
 </details>
 <details>
@@ -88,6 +89,14 @@ If something doesn't match your hardware (Wi-Fi card, GPU, storage), read the re
   * ✅ Airdrop
   * ✅ Handoff
   
+</details>
+<details>
+  <summary><strong>Known Issues</strong></summary>
+
+  * **AppleVTD (VT-d) + legacy Wi-Fi/BT rollback can cause Ethernet connect/disconnect loops on Tahoe.** This EFI rolls back `IOSkywalkFamily.kext` (via OCLP-CustoMac's Modern Wireless patch) to keep the on-board Broadcom Wi-Fi/BT working, while also keeping AppleVTD enabled (`DisableIoMapper=false`) with a patched `SSDT-DMAR.aml`. The `IntelMausiEthernet` maintainer confirms this exact combination is a known trigger for Ethernet flakiness under Tahoe, on hardware nearly identical to this build (Z390 Designare, i9/i7-9900K, Intel I219 LAN, Broadcom Wi-Fi via OCLP) — see [Mieze/IntelMausiEthernet#50](https://github.com/Mieze/IntelMausiEthernet/issues/50) (unresolved, auto-closed as stale).
+  * `BroadcomVTD.kext` ([kgp-macPro/BroadcomVTD-Tahoe](https://github.com/kgp-macPro/BroadcomVTD-Tahoe)) is included as an **experimental** attempt to let legacy Broadcom Wi-Fi coexist with AppleVTD without disabling it — it has no Z390 validation yet and does not address the Ethernet issue above. See [History](#history) for test results as they come in.
+  * If Ethernet instability persists, the documented fallback is setting `DisableIoMapper=true` (disables AppleVTD/IOMMU entirely) — this is the only combination multiple reporters confirm as reliably stable, at the cost of VT-d.
+
 </details>
 
 ## Installation Guide
@@ -186,6 +195,8 @@ Optional, for iGPU + dGPU hybrid setups (not required for the default build abov
 ## History
 <details>
   <summary><strong>Changes</strong></summary>
+  * 2026-09-16: [experiment/broadcomvtd] Added `BroadcomVTD.kext` 0.2.17 (experimental) to test whether legacy Broadcom Wi-Fi/BT can coexist with AppleVTD enabled on Tahoe, per [Mieze/IntelMausiEthernet#50](https://github.com/Mieze/IntelMausiEthernet/issues/50) and [kgp-macPro/BroadcomVTD-Tahoe](https://github.com/kgp-macPro/BroadcomVTD-Tahoe). Config otherwise unchanged (`DisableIoMapper=false`, patched `SSDT-DMAR.aml`). Pending real-hardware test results.
+
   * 2026-08-16: update macOS 26.6.2
 
   * 2025-09-20: change SMBIOS to MacPro7,1. Preparing for macOS Tahoe 26.
