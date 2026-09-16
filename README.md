@@ -5,6 +5,28 @@
 
 <img width="392" height="660" alt="Tahoe266" src="https://github.com/user-attachments/assets/7eaae57f-1dae-40dd-bf61-d7af6cbf7731" />
 
+## Table of Contents
+- [Quick Start](#quick-start)
+- [My PC Build](#my-pc-build)
+- [Installation Guide](#installation-guide)
+- [USB Port Map](#usb-port-map)
+- [Hardware Acceleration](#hardware-acceleration)
+- [Resources](#resources)
+- [Tools](#tools)
+- [History](#history)
+- [Thanks](#thanks)
+
+## Quick Start
+New to this repo? Follow these steps in order:
+
+1. **Check compatibility** — compare your parts against [My PC Build](#my-pc-build). The closer your hardware matches, the fewer changes you'll need.
+2. **Configure BIOS** — see [BIOS Setup](#bios-setup) below (VT-d on, Secure Boot/Security off).
+3. **Build a USB installer** — follow [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) to create the installer, then replace its `EFI` folder with the one from this repo. Adjust `EFI/OC/config.plist` (SMBIOS, USB map) for your own machine before booting — see [USB Port Map](USB_MAP.md) if your port layout differs.
+4. **Install macOS** — boot from the USB. If you hit a reboot loop, see [During Installation](#during-installation).
+5. **Finish post-install setup** — [SMBIOS](#change-smbios), [audio](#no-sound), [Wi-Fi/Bluetooth](#wifibluetooth), and [power management](#power-management).
+6. **Confirm what works** — check [Working ✅ / Not Working ☑️](#my-pc-build) and the [Kernel extensions](#my-pc-build) list against your own EFI.
+
+If something doesn't match your hardware (Wi-Fi card, GPU, storage), read the relevant subsection below before assuming the default config will just work.
 
 ## My PC Build
 <details>
@@ -13,7 +35,7 @@
   | Category          | Component                                                | Note                                                  |
   | ----------------- | -------------------------------------------------------  | ----------------------------------------------------- |
   | CPU               | Intel Core i9-9900K                                      |                                                       |
-  | GPU               | ASUS TUF GAMING Radeon™ RX 6900 XT OC Edition            | Native support, WhateverGreen kext no needed          |
+  | GPU               | ASUS TUF GAMING Radeon™ RX 6900 XT OC Edition            | Native support, WhateverGreen kext not needed         |
   | Motherboard       | Gigabyte Z390 AORUS MASTER                               |                                                       |
   | Storage (Windows) | Crucial P1 500GB 3D NAND NVMe PCIe (`M2M` slot)          | Internal NVME                                         |
   | Storage (macOS)   | Toshiba BG4 KBG40ZNT512G NVMe      (`M2A` slot)          | Internal NVME                                         |
@@ -54,7 +76,6 @@
 | IO80211FamilyLegacy    | 1200.12.2b1    |
 | BlueToolFixup          | 2.7.0          |
 
-
 </details>
 <details>
   <summary><strong>Working ✅ / Not Working ☑️</strong></summary>
@@ -69,8 +90,10 @@
   
 </details>
 
-## Macos Tahoe 26
-<details>
+## Installation Guide
+Tested on macOS Tahoe 26. Steps are in the order you'll hit them during a fresh install.
+
+<details open>
   <summary><strong>BIOS Setup (F13a)</strong></summary>
   
   * Enable VT-d
@@ -80,7 +103,7 @@
 <details>
   <summary><strong>During Installation</strong></summary>
   
-  * Unplug wired enthernet if you got loop as below
+  * Unplug wired ethernet if you get a reboot loop like below
     * <img width="750" height="1000" alt="patch-macos-increament" src="https://github.com/user-attachments/assets/8cb95a92-7caa-443e-b5ef-e9bd18d70a75" />
 
 </details>
@@ -88,16 +111,16 @@
   <summary><strong>Change SMBIOS</strong></summary>
   
   * Use MacPro7,1
-    * Apple mark this version is the latest verison support Mac Intel.
+    * Apple marks this as the latest version supporting Mac Intel.
   * Security
     * use j160
-  * [full](https://www.tonymacx86.com/threads/howto-macos-26-tahoe-with-opencore-1-0-5-z390-i9-9900-rx-6600-xt.332345/)
+  * [Full guide](https://www.tonymacx86.com/threads/howto-macos-26-tahoe-with-opencore-1-0-5-z390-i9-9900-rx-6600-xt.332345/)
 </details>
 <details>
   <summary><strong>No Sound</strong></summary>
   
-  * Apple drop Apple HDA. inject old from [link](https://github.com/chris1111/Kext-Droplet-macOS?tab=readme-ov-file)
-    * [simple loader](https://www.insanelymac.com/forum/topic/361429-simpleloader-kext-installer-utility/)
+  * Apple dropped Apple HDA. Inject the old one from [this link](https://github.com/chris1111/Kext-Droplet-macOS?tab=readme-ov-file)
+    * [Simple loader](https://www.insanelymac.com/forum/topic/361429-simpleloader-kext-installer-utility/)
 </details>
 <details>
   <summary><strong>Wifi/BlueTooth</strong></summary>
@@ -112,32 +135,12 @@
     * [link](https://vnohackintosh.com/docs/post-install/fixing-power-management/)
 </details>
 
-## History
-<details>
-  <summary><strong>Changes</strong></summary>
-  * 2026-08-16: update macOS 26.6.2
+## USB Port Map
+See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master.
 
-  * 2025-09-20: change SMBIOS to MacPro7,1. Preparing for macOS Tahoe 26.
+## Hardware Acceleration
+Optional, for iGPU + dGPU hybrid setups (not required for the default build above, which uses a native dGPU only).
 
-  * 2025-05-24: remove Intel Wifi Card, Installed BCM943602CS Follow this [video](https://youtu.be/d7F5d7EF334?t=713) for adjusting.
-
-        remap USBMap.Kext for disable HS14(Intel Wifi Card).
-        Keep 15 port below:
-        HS01 HS03 HS04 HS05 HS09 HS10 HS11 HS12 HS13
-        SS01 SS03 SS04 SS05 SS09 SS10
-  
-  * 2024-10-20: Updated to macOS 15.0.1, fix bluetooth broken
-  
-        <key>bluetoothInternalControllerInfo</key>
-        <data>AAAAAAAAAAAAAAAAAAA=</data>
-        <key>bluetoothExternalDongleFailed</key>
-        <data>AA==</data>
-      
-  * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
-  
-</details>
-
-## Hardware acceleration
 <details>
   <summary><strong>iMac19.1</strong></summary>
   
@@ -163,9 +166,6 @@
     * SMBIOS from iMacPro1,1.
 </details>
 
-## USB Port Map
-See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master.
-
 ## Resources
 * [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 * [Wifi-Bluetooth](https://openintelwireless.github.io/General/Installation.html)
@@ -183,6 +183,30 @@ See [USB_MAP.md](USB_MAP.md) for a map of all the ports on the Aorus z390 Master
 * [HDAUniversal](https://github.com/cmalf/HP-EliteDesk-800-G4-G5-Hackintosh/releases)
 * [Codec-Info](https://olarila.com/topic/46666-codec-info-for-macos-analog-hda-codec-detector-for-applehda-applealc-voodoohda-and-hdauniversal/)
 
+## History
+<details>
+  <summary><strong>Changes</strong></summary>
+  * 2026-08-16: update macOS 26.6.2
+
+  * 2025-09-20: change SMBIOS to MacPro7,1. Preparing for macOS Tahoe 26.
+
+  * 2025-05-24: remove Intel Wifi Card, Installed BCM943602CS Follow this [video](https://youtu.be/d7F5d7EF334?t=713) for adjusting.
+
+        remap USBMap.Kext for disable HS14(Intel Wifi Card).
+        Keep 15 port below:
+        HS01 HS03 HS04 HS05 HS09 HS10 HS11 HS12 HS13
+        SS01 SS03 SS04 SS05 SS09 SS10
+  
+  * 2024-10-20: Updated to macOS 15.0.1, fix bluetooth broken
+
+        <key>bluetoothInternalControllerInfo</key>
+        <data>AAAAAAAAAAAAAAAAAAA=</data>
+        <key>bluetoothExternalDongleFailed</key>
+        <data>AA==</data>
+      
+  * remove SSDT-PLUG due to macOS version >= 12.3 [link](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
+  
+</details>
 
 ## Thanks
 * [cmer](https://github.com/cmer) : this is the first guide that I followed and try with Catalina 10.15.1
