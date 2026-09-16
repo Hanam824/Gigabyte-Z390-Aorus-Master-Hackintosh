@@ -47,7 +47,7 @@
 | AppleALC               | 1.9.7          |
 | IntelBluetoothFirmware | 2.4.0          |
 | IntelBTPatcher         | 2.4.0          |
-| IntelMausi             | 1.0.8          |
+| IntelMausiEthernet     | 3.0.3          |
 | USBMap                 | Manual         |
 | AMFIPass               | 1.4.1          |
 | IOSkywalkFamily        | 1.0            |

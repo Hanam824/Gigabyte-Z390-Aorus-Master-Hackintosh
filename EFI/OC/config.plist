@@ -20,7 +20,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>DMAR.aml</string>
+                    <string>SSDT-DMAR.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
