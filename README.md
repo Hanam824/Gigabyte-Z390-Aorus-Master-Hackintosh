@@ -133,6 +133,7 @@ Tested on macOS Tahoe 26. Steps are in the order you'll hit them during a fresh 
   
   * [link](https://basic.heavietnam.com/universal/fix-power-management)
     * [link](https://vnohackintosh.com/docs/post-install/fixing-power-management/)
+  * MacPro7,1 + a desktop CPU (like this build's i9-9900K) can need CPU power management recalibrated — see [CPU_POWER_MANAGEMENT.md](CPU_POWER_MANAGEMENT.md) (experimental, `experiment/cpufriend-calibration` branch).
 </details>
 
 ## USB Port Map
